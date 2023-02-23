@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.heading{
+  color: #274472;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 60;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* The width is 3 times the width of a regular column */
+.bigColumn{
+  float: none;
+  width: 99.99%;
+  display: none;/* Hide columns by default */
+
+}
+
+.empty{
+  height: 100px;
+}
+
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-image:url("https://data.whicdn.com/images/298970024/original.gif");
+/*   https://whatifgaming.com/wp-content/uploads/2022/03/Open-A-New-Window.gif */
+  padding: 10px;
+  border-radius: 10px;
+  color: #274472;
+  text-align:center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #41729F;
+  cursor: pointer;
+  margin-right: 20px;
+  color: #274472;
+}
+
+nav{
+  background-color: #41729F;
+  padding: 10px;
+  border-radius: 10px;
+  display:flex;
+  justify-content:space-around;
+}
+
+footer{
+  background-color: #41729F;
+  padding: 20px;
+  color:  whitesmoke;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 10px;
+
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #274472;
+  color:whitesmoke;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #41729F;
+   color:  #274472;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+h1,h2,p {
+  font-family: 'Poppins', sans-serif;
+}
+
+/*  #145DA0
+#0C2D48
+#2E8BC0
+#B1D4E0*/
